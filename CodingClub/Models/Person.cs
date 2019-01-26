@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace CodingClub.Models
 {
     /// <summary>
-    /// Abstract class for shared properties between Client and Member
+    /// Abstract class for shared properties between derived concrete classes
     /// </summary>
     public abstract class Person
     {

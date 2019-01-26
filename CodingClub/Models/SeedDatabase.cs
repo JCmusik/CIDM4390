@@ -22,17 +22,13 @@ namespace CodingClub.Models
                     new Project
                     {
                         Title = "Kids Inc Webpage",
-                        BeginDate = DateTime.Parse("12/14/2018"),
-                        EndDate = DateTime.Parse("12/14/2019"),
-                        TotalHours = 2000,
+                        HoursLogged = 0,
 
                     },
                     new Project
                     {
                         Title = "Palace Coffee Database",
-                        BeginDate = DateTime.Parse("12/14/2018"),
-                        EndDate = DateTime.Parse("6/14/2019"),
-                        TotalHours = 1000,
+                        HoursLogged = 0,
                     }
                 };
 
