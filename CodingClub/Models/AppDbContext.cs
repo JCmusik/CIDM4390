@@ -9,6 +9,7 @@ namespace CodingClub.Models
 
         public DbSet<Member> Members { get; set; }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<President> President { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<ProjectPerson> ProjectPersons { get; set; }
 
@@ -16,6 +17,7 @@ namespace CodingClub.Models
         {
             modelBuilder.Entity<Member>().ToTable("Member");
             modelBuilder.Entity<Client>().ToTable("Client");
+            modelBuilder.Entity<President>().ToTable("President");
             modelBuilder.Entity<Project>().ToTable("Project");
 
             modelBuilder.Entity<ProjectPerson>()
