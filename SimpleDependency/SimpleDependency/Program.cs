@@ -1,4 +1,5 @@
 ﻿using System;
+using MessagePrinter;
 
 namespace SimpleDependency
 {
@@ -6,7 +7,14 @@ namespace SimpleDependency
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var service = new MessagePrintingService("Print from Message Printing Service");
+
+            service.PrintMessage();
+
+            Console.ReadLine();
+
+
         }
     }
 }
