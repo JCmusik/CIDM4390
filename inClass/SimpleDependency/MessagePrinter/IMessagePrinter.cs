@@ -1,4 +1,8 @@
-public interface IMessagePrinter
+namespace MessagePrinter
 {
-    void PrintMessage(string message);
+    public interface IMessagePrinter
+    {
+        void PrintMessage(string message);
+    }
+
 }
