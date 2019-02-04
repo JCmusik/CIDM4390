@@ -2,7 +2,7 @@
 
 namespace MessagePrinter
 {
-    public class MessagePrintingService
+    public class MessagePrintingService : IMessagePrinter
     {
         private string Message { get; set; }
 
@@ -11,8 +11,10 @@ namespace MessagePrinter
         {
             Message = message;
         }
-        public void PrintMessage()
+
+        public void PrintMessage(string message)
         {
+            Message = message;
             Console.WriteLine(this.Message);
         }
     }
