@@ -8,11 +8,9 @@ namespace SimpleDependency
         static void Main(string[] args)
         {
 
-            var service = new MessagePrintingService("Print from Message Printing Service");
+            IMessagePrinter service = new MessagePrintingService();
 
-            service.PrintMessage();
-
-            Console.ReadLine();
+            service.PrintMessage("Hello World");
 
 
         }
