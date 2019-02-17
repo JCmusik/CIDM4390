@@ -204,7 +204,7 @@ namespace Solid
 ```
 This Factory will be using static classes so there we won't need to instantiate this class to use it's methods.
 
-Let's locate the places where `Program.cs` is instantiating classes.  I've often heard seasoned coders say, "new is glue".  This means that when you see the keyword new being used you have now created a dependency.  Earlier I mentioned we want loose coupling in our code and depend on abstractions so using the new keyword is a code smell.
+Let's locate the places where `Program.cs` is instantiating classes.  I've often heard seasoned coders say, "new is glue".  This means that when you see the keyword new being used you have now created a dependency.  Earlier I mentioned we want loose coupling in our code and to depend on abstractions, so using the new keyword is a code smell.
 
 Now refactor the following lines in the `Program.cs` file
 ```csharp
@@ -226,4 +226,4 @@ to this
 
 ## Conclusion
 
-Your application runs as it did when we first started, however your Program class has one repsonsibility which is to call on other classes to perform their single responsiblity.  Now consider someone reading your code and they want to see the implementation details of how you are validating user data.  They can `ctrl+click [Windows]` or `command+click [Mac]` on the `ValidateUser()` in `Program.cs` be taken to the the occurence of this method in `UserValidator.cs` class to view the implementation.
+Your application runs as it did when we first started, however your Program class has one repsonsibility which is to call on other classes to perform their single responsiblity.  Consider the perspective of a team mate reading your code. If they want to see the implementation details of how you are validating user data, they can `ctrl+click [Windows]` or `command+click [Mac]` on the `ValidateUser()` in `Program.cs` be taken to the the occurence of this method in `UserValidator.cs` class to view the implementation.
