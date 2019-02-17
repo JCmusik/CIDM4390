@@ -1,4 +1,5 @@
-### Solid principles
+## Solid principles
+### <b>Single Responsibility</b>
 
 Up to this point, you've probably put most of your logic in the `Program.cs`file.  This is where the application first starts up and where your code did what you programmed it to do.  Although this has worked for simple applications, this will hinder your success as a coder for larger projects.  Code written like this is hard to read and maintain and does not lend itself to coding within a team.  Your projects should be coded in a way that allows for change.  The Solid principles go hand in hand and work together.  These principles will guide you in how you should think about writing code that is loosely coupled and depends on abstractions.  The first principle in Solid is called Single Responsibilty and is defined below.
 
