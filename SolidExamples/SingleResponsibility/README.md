@@ -100,7 +100,7 @@ Now we'll need to refactor the `Program.cs` file to accomodate this change.
     message.InitialWelcome();
 
 ```
-Although I've added a new responsibilty to the `Program.cs` file, which is the instantiation the MessagePrinter class, we'll refactor this later as well.  Hopefully you can see that the Program class is not responsible for displaying the message, only calling the class that does.  Also notice that we don't know the implemnetation details of the `InitialWelcome`, we just know that we need an initial message.  Let's locate the other places where we need a message displayed.
+Although I've added a new responsibilty to the `Program.cs` file, which is the instantiation the MessagePrinter class, we'll refactor this later as well.  Hopefully you can see that the Program class is not responsible for displaying the message, only calling the class that does.  Also notice that we don't know the implementation details of the `InitialWelcome`, we just know that we need an initial message.  Let's locate the other places where we need a message displayed.
 
 ```csharp
     Console.Write("Please enter your first name ");
